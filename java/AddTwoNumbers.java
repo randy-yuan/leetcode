@@ -19,6 +19,7 @@ Explanation: 342 + 465 = 807.
  * }
  */
 class Solution {
+    // 模拟数字运算，细心即可，代码紧凑高效
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
         ListNode node = head;
