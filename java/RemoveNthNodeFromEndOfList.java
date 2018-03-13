@@ -20,6 +20,8 @@ Try to do this in one pass.
  * }
  */
 class Solution {
+    // 利用快慢两个指针，实现遍历一遍找到末尾开始的第N个元素
+    // 巧妙利用额外的头节点，简化程序代码
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode newHead = new ListNode(0);
         newHead.next = head;
