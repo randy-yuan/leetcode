@@ -3,7 +3,12 @@ https://leetcode-cn.com/problems/regular-expression-matching/description/
 
 利用栈的特性，对于*，先贪心匹配，如果后续出现不匹配的情况，则后退减少匹配的字符，
 直到整个字符串匹配，或者所有*都匹配0个字符，则整个字符串不匹配
+
 */
+
+// 本质上和递归是一样的，算是递归算法的非递归版本，没有递归算法好理解
+// 在实际解题时，优先考虑递归算法，比较容易实现，且不容易出错
+
 
 class Solution {
     enum Mode {
