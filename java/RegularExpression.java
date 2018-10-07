@@ -1,5 +1,8 @@
 /**
 https://leetcode-cn.com/problems/regular-expression-matching/description/
+
+利用栈的特性，对于*，先贪心匹配，如果后续出现不匹配的情况，则后退减少匹配的字符，
+直到整个字符串匹配，或者所有*都匹配0个字符，则整个字符串不匹配
 */
 
 class Solution {
